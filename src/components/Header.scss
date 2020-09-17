@@ -1,0 +1,59 @@
+/* main colors */
+$blackFont: #3d3d3d;
+$whiteFont: #f6f6f6;
+$grayFont: #949494;
+$grayFontLight: #9b9b9b;
+
+$grayBackground: #464646;
+$grayBackgroundLight: #747474;
+$whiteBackground: #f2f2f2;
+$whiteBackgroundLight: #fefefe;
+
+$grayBorder: #d5d5d5;
+
+/* special colors */
+$green: #40d36c;
+$red: #c91a1a;
+$blue: #45519d;
+$white: #f6f6f6;
+$aqua: #10cac4;
+$dark: #28252a;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.header-left {
+  padding-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav-link {
+  height: 100%;
+  line-height: 60px;
+  font-size: 1.2rem;
+  margin-right: 60px;
+  font-weight: bold;
+  transition: 0.3s;
+  text-decoration: none;
+  color: $blackFont;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+    color: $aqua;
+  }
+  &-active {
+    color: red;
+  }
+}
+
+.header-right {
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

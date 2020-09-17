@@ -1,0 +1,140 @@
+/* main colors */
+$blackFont: #3d3d3d;
+$whiteFont: #f6f6f6;
+$grayFont: #949494;
+$grayFontLight: #9b9b9b;
+
+$grayBackground: #464646;
+$grayBackgroundLight: #747474;
+$whiteBackground: #f2f2f2;
+$whiteBackgroundLight: #fefefe;
+
+$grayBorder: #d5d5d5;
+
+/* special colors */
+$green: #40d36c;
+$red: #c91a1a;
+$blue: #45519d;
+$white: #f6f6f6;
+$aqua: #10cac4;
+$dark: #28252a;
+
+.initial {
+  width: 100%;
+  height: 100vh;
+  background: $grayBackground;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.initial-form {
+  width: 600px;
+  min-height: 600px;
+  background: $whiteBackground;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.initial-form-fields-header {
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 27px;
+  font-weight: bold;
+  color: $grayFontLight;
+  &-span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $blackFont;
+  }
+}
+
+.initial-form-fields-text {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 1.4rem;
+  color: $grayFont;
+  &-span {
+    color: $blue;
+    text-decoration: underline;
+    &:hover {
+      cursor: pointer;
+      color: blue;
+    }
+  }
+  padding-bottom: 30px;
+}
+
+.initial-form-fields-record {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 60px;
+  &-input {
+    outline: none;
+    background: none;
+    border: none;
+    color: $grayFont;
+    border-bottom: 1px solid $grayBorder;
+    height: 48px;
+    font-size: 1.6em;
+    padding-left: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    &:focus {
+      border-bottom: 1px solid $aqua;
+    }
+    &:required {
+      border-bottom: 1px solid $red;
+    }
+  }
+  &-img {
+    user-select: none;
+    margin-top: 12px;
+    margin-left: 30px;
+    width: 30px;
+  }
+}
+
+.initial-form-btn {
+  margin: 0 auto;
+  line-height: 48px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.6em;
+  height: 48px;
+  width: 256px;
+  border: none;
+  outline: none;
+  border: 1px solid $aqua;
+  border-radius: 3px;
+  color: $whiteFont;
+  background: $aqua;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    color: $aqua;
+    background: $whiteBackground;
+  }
+}
+
+.initial-form-image {
+  overflow: hidden;
+  &-img {
+    user-select: none;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .initial-form {
+    grid-template-columns: 0fr 1fr;
+  }
+}
