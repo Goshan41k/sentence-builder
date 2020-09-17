@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# sentence builder
+
+## Work in progress
+
+## Used technologies:
+
+react-create-app, react, redux, react-redux, redux-saga, react-router, scss, google firebase
+
 ## Available Scripts
 
 In the project directory, you can run:
