@@ -40,6 +40,18 @@ $dark: #28252a;
   align-items: center;
 }
 
+.times-field {
+  &-header {
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+  &-inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-auto-rows: 30px;
+  }
+}
+
 .sentence-field-text {
   font-size: 2rem;
   color: $whiteFont;
@@ -61,6 +73,8 @@ $dark: #28252a;
 }
 
 .main-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: 1px solid $aqua;
   outline: none;
   width: 128px;
@@ -77,5 +91,30 @@ $dark: #28252a;
 }
 
 .main-sentence-builder-hints {
+  padding-top: 30px;
   background: $aqua;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+// Input Component
+.input-component-container {
+  padding-top: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  height: 20px;
+  width: 150px;
+}
+
+.input-component-container-label {
+  user-select: none;
+}
+
+.input-component-container-checkbox {
+  margin: 2px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  outline: none;
 }

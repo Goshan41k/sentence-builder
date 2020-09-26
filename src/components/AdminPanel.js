@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './AdminPanel.scss';
-import firebaseAPI from '../firebase';
+// import firebaseAPI from '../firebase';
 
 const AdminPanel = () => {
   const [englishText, setEnglishText] = useState('');
@@ -11,13 +11,6 @@ const AdminPanel = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    firebaseAPI.database().ref('sentence-builder').push({
-      englishText,
-      russianText,
-      sentenceTime,
-      tenseRule,
-      usedWords,
-    });
   };
 
   return (

@@ -21,25 +21,43 @@ $dark: #28252a;
 
 .hint {
   width: 300px;
-  border: 1px solid $whiteFont;
+  border-top: 1px solid $whiteFont;
   border-bottom: none;
+  color: $whiteFont;
 }
 
 .hint-header {
+  user-select: none;
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
   height: 30px;
+  box-sizing: border-box;
   border-bottom: 1px solid $whiteFont;
+  border-left: 1px solid $whiteFont;
+  border-right: 1px solid $whiteFont;
   color: $whiteFont;
   &-text {
+    user-select: none;
     padding-left: 50px;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   &-icon {
-    padding-right: 50px;
+    margin-top: 7px;
+    margin-right: 50px;
+    height: 16px;
+    transition: 0.3s;
+    &-active {
+      transform: scaleY(-1);
+    }
   }
 }
 
 .hint-body {
   border-bottom: 1px solid $whiteFont;
+  border-left: 1px solid $whiteFont;
+  border-right: 1px solid $whiteFont;
 }
